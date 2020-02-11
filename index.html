@@ -13,11 +13,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.myContainer {
+    width: 100%;
+    float: left;
+}
+
+.your-centered-div {
+    max-width: 560px; /* you have to have a size or this method doesn't work */
+    max-height: 315px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .topnav {
@@ -57,23 +62,19 @@ body {
 <div class="jumbotron text-center">
     <h1>Landon's Tabletop Ground</h1>
     <p>The home for all of my creations for fantasy TTRPG's!</p> 
-  </div>
+</div>
     
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4"></div>
       <div class="col-sm-4">
         
       <p>And this is where my content would go... IF I HAD ANY!</p>
 
       </div>
-      <div class="col-sm-4"></div>
-    </div>
+    <div class="col-sm-4"></div>
   </div>
 </div>
-<div>
-  <iframe width="280" height="158" style="float:center" src="https://www.youtube.com/embed/5FjWe31S_0g" frameborder="0" allow="accelerometer; 
-   autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+
 </body>
 </html>
