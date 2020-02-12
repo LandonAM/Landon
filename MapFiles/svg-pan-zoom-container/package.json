@@ -1,0 +1,81 @@
+{
+  "_from": "svg-pan-zoom-container",
+  "_id": "svg-pan-zoom-container@0.2.6",
+  "_inBundle": false,
+  "_integrity": "sha512-6Cy0SC0an/6pkNr9eovioz9i23KheQ1SqeawgGzpywp/jHEI4mCW3A5A27iZxFcPIC/p0A7IB4+Pp4rJIEas7A==",
+  "_location": "/svg-pan-zoom-container",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "svg-pan-zoom-container",
+    "name": "svg-pan-zoom-container",
+    "escapedName": "svg-pan-zoom-container",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/svg-pan-zoom-container/-/svg-pan-zoom-container-0.2.6.tgz",
+  "_shasum": "9804f59fc28ad4834bbe721df14e341e8ac0c540",
+  "_spec": "svg-pan-zoom-container",
+  "_where": "C:\\Users\\lm17tb",
+  "bugs": {
+    "url": "https://github.com/luncheon/svg-pan-zoom-container/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A vanilla-js module for adding zoom-on-wheel and pan-on-drag behavior to inline SVG elements.",
+  "devDependencies": {
+    "copyfiles": "^2.1.1",
+    "gzip-size": "^5.1.1",
+    "npm-run-all": "^4.1.5",
+    "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.21.2",
+    "sane": "^4.1.0",
+    "typescript": "^3.6.3",
+    "uglify-js": "^3.6.0"
+  },
+  "files": [
+    "es",
+    "cjs",
+    "iife",
+    "src"
+  ],
+  "homepage": "https://github.com/luncheon/svg-pan-zoom-container#readme",
+  "jsdelivr": "iife/index.min.js",
+  "keywords": [
+    "svg",
+    "pan",
+    "zoom",
+    "directive",
+    "vanilla",
+    "vanilla-js"
+  ],
+  "license": "WTFPL",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "name": "svg-pan-zoom-container",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luncheon/svg-pan-zoom-container.git"
+  },
+  "scripts": {
+    "build": "npm-run-all -s clean -p build:*",
+    "build:demo-index": "pug demo/index.pug -o docs/ -O package.json",
+    "build:demo-local": "pug demo/local.pug -o docs/ -O package.json",
+    "build:ts": "node build.js",
+    "clean": "rimraf docs/ es/ cjs/ iife/",
+    "watch": "npm-run-all -s clean -p watch:*",
+    "watch:demo-index": "npm run build:demo-index -- -w",
+    "watch:demo-local": "npm run build:demo-local -- -w",
+    "watch:ts": "sane \"npm run build:ts\" --glob=src/**/*.ts"
+  },
+  "types": "es/index.d.ts",
+  "unpkg": "iife/index.min.js",
+  "version": "0.2.6"
+}
