@@ -2,7 +2,7 @@
 <html>
 
 <script src="https://scripts.sirv.com/sirv.js"></script>
-<script src="http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.min.js"></script>
+<script src="http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.js"></script>
 
 
 <head>
@@ -85,9 +85,23 @@ body {
   </div>
 </div>
 
-<div class="svgPanZoom">
-    <embed type="image/svg+xml" src="https://landonam.sirv.com/Images/Cartizon%20Feb11%2022-55.svg" id="map-embed"/>
+<div>
+    <embed id="map-embed" type="image/svg+xml" src="https://landonam.sirv.com/Images/Cartizon%20Feb11%2022-55.svg" />
+
 </div>
+
+<h1>Demo for svg-pan-zoom: SVG in HTML 'embed' element</h1>
+    <embed id="demo-tiger" type="image/svg+xml" style="width: 500px; height: 500px; border:1px solid black; " src="https://landonam.sirv.com/Images/Cartizon%20Feb11%2022-55.svg" />
+
+    <script>
+      // Don't use window.onLoad like this in production, because it can only listen to one function.
+      window.onload = function() {
+        svgPanZoom('#demo-tiger', {
+          zoomEnabled: true,
+          controlIconsEnabled: true
+        });
+      };
+    </script>
 
 </body>
 </html>
