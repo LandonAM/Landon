@@ -4,7 +4,8 @@ $(function() {
     controlIconsEnabled: true,
     fit: true,
     center: true,
-    minZoom: 0.1
+    maxZoom: 30,
+    minZoom: 1
   });
 
   // zoom out
