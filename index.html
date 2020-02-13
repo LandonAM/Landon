@@ -18,9 +18,23 @@ body {
     float: left;
 }
 
-.your-centered-div {
-    max-width: 560px; /* you have to have a size or this method doesn't work */
-    max-height: 315px;
+.stream-center {
+    max-width: 1200px; /* you have to have a size or this method doesn't work */
+    max-height: 540px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.banner-center {
+    max-width: 712px; /* you have to have a size or this method doesn't work */
+    max-height: 540px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bottom-center {
+    max-width: 600px; /* you have to have a size or this method doesn't work */
+    max-height: 30px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -66,13 +80,11 @@ body {
     
 <div class="container">
   <div class="row">
-    <div class="col-sm-4"></div>
-      <div class="col-sm-4">
+      <div class="col-sm-12">
         
-      <p>And this is where my content would go... IF I HAD ANY!</p>
+      <p>The Brock Westmarches club I am a part of at Brock University is running a 24 hour charity event. You can watch the stream here and read chat here if you want.</p>
 
       </div>
-    <div class="col-sm-4"></div>
   </div>
 </div>
 
@@ -80,13 +92,44 @@ body {
 
   <div class="myContainer">
     
-      <div class="your-centered-div">
-          <iframe width="560" height="315" src="https://player.twitch.tv/?channel=brockwestmarches" frameborder="0" allowfullscreen=""></iframe>
-      </div>
+      <div class="stream-center">
+          <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+            <script type="text/javascript">
+              new Twitch.Embed("twitch-embed", {
+                width: 1200,
+                height: 540,
+                channel: "brockwestmarches"
+                });
+            </script>
+        </div>
     
   </div>
 
 <div class="myContainer"></div>
+
+
+<div class="myContainer">
+<div class="banner-center">
+
+  <img src="Extralife\extralife banner.jpg" alt="Extralife banner." style="margin-top: 20px">
+
+</div>
+</div>
+
+<div class="myContainer">
+  <div class="bottom-center">
+    <a href="https://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&participantID=402553">
+      <img src="misc images\Bottom of page dots.png" alt="End of page." style="margin-top: 100px" style="margin-bottom: 20px">
+    </a>
+  </div>
+</div>
+
 
 </body>
 </html>
