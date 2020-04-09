@@ -1,159 +1,186 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Cartizon World</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-.myContainer {
-    width: 100%;
-    float: left;
-}
+    .myContainer {
+      width: 100%;
+      float: left;
+    }
 
-.stream-center {
-    max-width: 1200px; /* you have to have a size or this method doesn't work */
-    max-height: 540px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    .stream-center {
+      max-width: 1200px;
+      /* you have to have a size or this method doesn't work */
+      max-height: 540px;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-.text-center {
-    max-width: 50%px; /* you have to have a size or this method doesn't work */
-    max-height: 540px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    .text-center {
+      max-width: 50%px;
+      /* you have to have a size or this method doesn't work */
+      max-height: 540px;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-.banner-center {
-    max-width: 712px; /* you have to have a size or this method doesn't work */
-    max-height: 540px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    .banner-center {
+      max-width: 712px;
+      /* you have to have a size or this method doesn't work */
+      max-height: 540px;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-.extralife-center {
-    max-width: 302px; /* you have to have a size or this method doesn't work */
-    max-height: 252px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    .extralife-center {
+      max-width: 302px;
+      /* you have to have a size or this method doesn't work */
+      max-height: 252px;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-.bottom-center {
-    max-width: 600px; /* you have to have a size or this method doesn't work */
-    max-height: 30px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    .bottom-center {
+      max-width: 600px;
+      /* you have to have a size or this method doesn't work */
+      max-height: 30px;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-</style>
+    .topnav a.active {
+      background-color: #6600cc;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="myWork.html">My Work</a>
-  <a href="Cartizon.html">Cartizon</a>
-  <a href="#contact">D&D</a>
-  <a href="Dungeon World.html">Dungeon World</a>
-</div>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="myWork.html">My Work</a>
+    <a href="contact.html">Contact Me</a>
+  </div>
 
-<div class="jumbotron text-center">
+  <div class="jumbotron text-center">
     <h1>Landon McPhee</h1>
-    <p>Project Manager/Producer/World Designer</p> 
-</div>
-    
-<div class="container">
-  <div class="row">
-      <div class="text-center">
-        
-      <p>The Brock Westmarches club I am a part of at Brock University is running a 24 hour charity event. You can watch the stream here and read chat here if you want.</p>
-
-      </div>
+    <p>Project Manager/Producer/World Designer</p>
   </div>
-</div>
 
-<div class="myContainer"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="panel panel-default" style="height:600px">
+          <div class="panel-body">
+            <h2>My Work</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" style="height:505px">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
 
-  <div class="myContainer">
-    
-      <div class="stream-center">
-          <!-- Add a placeholder for the Twitch embed -->
-            <div id="twitch-embed"></div>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
 
-    <!-- Load the Twitch embed script -->
-            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                <div class="item active">
+                  <div class="text-center" style="height:505px">
+                    <img src="misc images\Project Pictures\monster-meld-logo.png" alt="Monster Meld Logo"
+                      style="height:100%;width:100%;">
+                  </div>
+                  <div class="carousel-caption">
+                    <h3><a href="myWork.html">Click Here for more info.</a></h3>
+                  </div>
+                </div>
 
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-            <script type="text/javascript">
-              new Twitch.Embed("twitch-embed", {
-                width: 1200,
-                height: 540,
-                channel: "brockwestmarches"
-                });
-            </script>
-            
+                <div class="item">
+                  <div class="text-center" style="height:505px">
+                    <img src="misc images\Project Pictures\mto-logo.jpg" alt="MTO Logo" style="height:50%;width:100%;">
+                  </div>
+                  <div class="carousel-caption">
+                    <h3><a href="myWork.html">Click Here for more info.</a></h3>
+                  </div>
+                </div>
 
+                <div class="item">
+                  <div class="text-center" style="height:505px">
+                    <img src="misc images\Project Pictures\westmarches-picture.jpg" alt="D&D Study Photo"
+                      style="height:100%;width:100%;">
+                  </div>
+                  <div class="carousel-caption">
+                    <h3><a href="myWork.html">Click Here for more info.</a></h3>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+          </div>
         </div>
-    
+      </div>
+      <div class="col-sm-4">
+        <h2>What do I do?</h2>
+        <p>I am a Producer/Project Manager first, and a world designer second. My goals are to develop projects and
+          produce things that entertain and or help people. From games to software to any form of interactive media I
+          have widespread skills and a knowledge base from past work experiences in multiple fields as well as my time
+          spent studying and working on real projects in my time at Brock University.</p>
+        <p>I can lead a project from start to finish and guide a team while analyzing scope, stakes, and resource
+          management while developing production plans to fit any work environment or project to guide a team from start
+          to finish.</p>
+        <p>You can find some of my past work in the slides on this page where I helped manage and document different
+          projects related to games and professional software and web development.</p>
+        <p><a href="https://www.linkedin.com/in/landon-mcphee-48495012a/" target="_blank">Connect with me on LinkedIn.</a></p>
+        <p><a href="https://medium.com/@landon.avery.mcphee" target="_blank">I post Pproffesional blog posts on Medium.com.</a></p>
+      </div>
+    </div>
   </div>
-
-<div class="myContainer"></div>
-
-<div class="myContainer">
-  <div class="extralife-center">
-    <iframe src="https://www.extra-life.org/index.cfm?fuseaction=widgets.300x250thermo&participantID=402553" width="302" height="252" frameborder="0" scrolling="no"><a href="https://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&participantID=402553">Make a Donation!</a></iframe>
   </div>
-</div>
-
-<div class="myContainer">
-<div class="banner-center">
-  <a href="https://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&participantID=402553" target="_blank">
-    <img src="Extralife\extralife banner.jpg" alt="Extralife banner." style="margin-top: 20px">
-  </a>
-</div>
-</div>
-
-
-
-<div class="myContainer">
-  <div class="bottom-center">
-    
-      <img src="misc images\Bottom of page dots.png" alt="End of page." style="margin-top: 100px" style="margin-bottom: 20px">
-    
-  </div>
-</div>
 
 
 </body>
+
 </html>
